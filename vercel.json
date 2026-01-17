@@ -1,0 +1,32 @@
+{
+  "buildCommand": "npm run build",
+  "devCommand": "npm run dev",
+  "installCommand": "npm install",
+  "framework": "nextjs",
+  "nodeVersion": "20.x",
+  "regions": ["iad1"],
+  "env": [
+    {
+      "key": "NEXT_PUBLIC_APP_URL",
+      "description": "Your application URL",
+      "value": ""
+    },
+    {
+      "key": "DATABASE_URL",
+      "description": "Database connection string (optional)",
+      "value": "",
+      "type": "secret"
+    },
+    {
+      "key": "JWT_SECRET",
+      "description": "JWT secret for sessions (optional)",
+      "value": "",
+      "type": "secret"
+    }
+  ],
+  "git": {
+    "deploymentEnabled": {
+      "main": true
+    }
+  }
+}
